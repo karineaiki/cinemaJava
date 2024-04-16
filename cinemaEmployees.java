@@ -14,7 +14,7 @@ class cinemaEmployees {
             } else {
                 salary = hoursWorked[i]*hourlyRates[i];
             };
-            System.out.println("le salaire de" + employeeNames[i]+ " est de :" + salary + ".");
+            System.out.println("le salaire de " + employeeNames[i]+ " est de :" + salary + " par semaine.");
         };
 
         Scanner scanner = new Scanner(System.in);

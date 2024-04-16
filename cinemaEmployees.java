@@ -9,8 +9,11 @@ class cinemaEmployees {
 
         for (int i=0; i < employeeNames.length; i++) {
             double salary = 0.0;
-            if (hoursWorked[i] > 35) {
-                salary = hoursWorked[i]*hourlyRates[i]*1.5;
+            int fullTimeWork = 35;
+            if (hoursWorked[i] > fullTimeWork) { 
+                int supHours = hoursWorked[i] - fullTimeWork;
+                
+                salary = (fullTimeWork*hourlyRates[i]) + (supHours*hourlyRates[i]*1.5);
             } else {
                 salary = hoursWorked[i]*hourlyRates[i];
             };
